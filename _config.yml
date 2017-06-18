@@ -1,2 +1,3 @@
-	name: Mihai Cosareanu
-	markdown: kramdown
+name: Mihai Cosareanu
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
