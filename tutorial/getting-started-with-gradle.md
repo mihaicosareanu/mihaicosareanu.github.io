@@ -10,7 +10,7 @@ I've had quite a lot of frustration working with gradle in big projects, especia
 
 ## Gradle
 
-*What is gradle?*
+**What is gradle?**
 
 Gradle is a build tool, similar to Apache Ant or Maven, though it is more powerful. You can specify the project's dependencies from any repository, manage multiple-project builds, define your own tasks to be run, create plugins for it and lots of other cool stuff. 
 
