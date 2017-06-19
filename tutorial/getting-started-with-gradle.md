@@ -71,6 +71,7 @@ Let's start with a basic task hierarchy:
 Insert image here:
 
 These commands should be everything you need to get started with Gradle: 
+```
     ./gradlew dist test - executes dist and test tasks sequentially. Each task, including its dependencies, is executed only once. In this example compileTest was already run for the dist task, so it won't be ran again for the test task.
     ./gradlew dist -x test - runs dist but excludes test.
     ./gradlew di - abbreviation works as long as it's unique.
@@ -90,6 +91,7 @@ These commands should be everything you need to get started with Gradle:
     ./gradlew dist --profile - profile the build
     ./gradlew -m dist test - prints the tasks without running them
     ./gradlew dist --no-daemon - do not use the daemon for the build
+```
 
 Some of these commands **may not be available** depending on the version of gradle that you are using.
 
