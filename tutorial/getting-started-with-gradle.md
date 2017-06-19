@@ -14,7 +14,7 @@ I've had quite a lot of frustration working with gradle in big projects, especia
 
 Gradle is a build tool, similar to Apache Ant or Maven, though it is more powerful. You can specify the project's dependencies from any repository, manage multiple-project builds, define your own tasks to be run, create plugins for it and lots of other cool stuff. 
 
-*How is gradle configured?*
+**How is gradle configured?**
 
 Gradle loads the configuration properties in this order:
 
@@ -22,21 +22,21 @@ Gradle loads the configuration properties in this order:
 2. gradle.properties in gradle user home.
 2. system properties, e.g. when `-Dsome.property` is set on the command line.
 
-*What files are read when running a Gradle task?*
+**What files are read when running a Gradle task?**
 
 When running a gradle task from a project or sub-project folder `build.gradle` and `settings.gradle` are the files used by gradle to read the project's task definitions, dependencies and properties. In a multi-project build, the methods and properties of a sub-project are inherited from the parent project. 
 
-*Where are the gradle distributions stored?*
+**Where are the gradle distributions stored?**
 
 It shouldn't matter to you, but they are stored in `$USER_HOME/.gradle/wrapper/dists`.
 
 ## Gradle Wrapper
 
-*What is gradlew (Gradle Wrapper)?*
+**What is gradlew (Gradle Wrapper)?**
 
 Gradle wrapper is nothing more than a shell script that downloads and runs the appropriate version of gradle so you don't have to. This is useful because you can commit gradle wrapper to git and distribute it, so that when you checkout a project you don't have to manually install the required gradle version. Also it's very useful for continuous integration machines so that you don't manage gradle versions on them. 
 
-*Gradle wrapper files*
+**Gradle wrapper files**
 
 Gradle wrapper uses the following files (these should be committed to the project's git):
 * gradlew (Unix Shell script)
@@ -91,7 +91,7 @@ These commands should be everything you need to get started with Gradle:
     ./gradlew -m dist test - prints the tasks without running them
     ./gradlew dist --no-daemon - do not use the daemon for the build
 
-Some of these commands *may not be available* depending on the version of gradle that you are using.
+Some of these commands **may not be available** depending on the version of gradle that you are using.
 
 ## Advanced - Further Reading
 
