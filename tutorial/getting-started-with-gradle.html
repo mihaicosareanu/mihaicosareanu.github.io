@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Getting Started with Gradle</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			<div class="container">
+			
+			<h1 id="getting-started-with-gradle">Getting Started With Gradle</h1>
+
+<p>I’ve had quite a lot of frustration working with gradle in big projects, especially ones that were organized as many sub-projects, so I started reading the awfully written gradle user guide. As I was reading it I started writing this tutorial, because I realized that there was so little that was actually useful to me as a developer. Hopefully this will be helpful to people who are new to gradle.</p>
+
+<h2 id="gradle">Gradle</h2>
+
+<p><strong>What is gradle?</strong></p>
+
+<p>Gradle is a build tool, similar to Apache Ant or Maven, though it is more powerful. You can specify the project’s dependencies from any repository, manage multiple-project builds, define your own tasks to be run, create plugins for it and lots of other cool stuff.</p>
+
+<p><strong>How is gradle configured?</strong></p>
+
+<p>Gradle loads the configuration properties in this order:</p>
+
+<ol>
+  <li>gradle.properties in project build dir.</li>
+  <li>gradle.properties in gradle user home.</li>
+  <li>system properties, e.g. when <code class="highlighter-rouge">-Dsome.property</code> is set on the command line.</li>
+</ol>
+
+<p><strong>What files are read when running a Gradle task?</strong></p>
+
+<p>When running a gradle task from a project or sub-project folder <code class="highlighter-rouge">build.gradle</code> and <code class="highlighter-rouge">settings.gradle</code> are the files used by gradle to read the project’s task definitions, dependencies and properties. In a multi-project build, the methods and properties of a sub-project are inherited from the parent project.</p>
+
+<p><strong>Where are the gradle distributions stored?</strong></p>
+
+<p>It shouldn’t matter to you, but they are stored in <code class="highlighter-rouge">$USER_HOME/.gradle/wrapper/dists</code>.</p>
+
+<h2 id="gradle-wrapper">Gradle Wrapper</h2>
+
+<p><strong>What is gradlew (Gradle Wrapper)?</strong></p>
+
+<p>Gradle wrapper is nothing more than a shell script that downloads and runs the appropriate version of gradle so you don’t have to. This is useful because you can commit gradle wrapper to git and distribute it, so that when you checkout a project you don’t have to manually install the required gradle version. Also it’s very useful for continuous integration machines so that you don’t manage gradle versions on them.</p>
+
+<p><strong>Gradle wrapper files</strong></p>
+
+<p>Gradle wrapper uses the following files (these should be committed to the project’s git):</p>
+<ul>
+  <li>gradlew (Unix Shell script)</li>
+  <li>gradlew.bat (Windows batch file)</li>
+  <li>gradle/wrapper/gradle-wrapper.jar (Wrapper JAR)</li>
+  <li>gradle/wrapper/gradle-wrapper.properties (Wrapper properties)</li>
+</ul>
+
+<p>Always use gradle wrapper instead of gradle. Simple as that!</p>
+
+<h2 id="gradle-daemon">Gradle Daemon</h2>
+
+<p>Gradle and gradlew by default use a gradle daemon. A gradle daemon is a process running in background that aims to speed up the builds by leveraging caching. 
+IntelliJ, Eclipse, or other software that uses gradle’s tooling API always use a daemon. 
+You can have more than one gradle daemon running on the system (for example one from your IDE and one from running gradlew in terminal). 
+If you’re having caching problems such as running inexistent tests (due to checking out another branch in git), you can kill all the gradle daemons and run the task again. 
+Do use the gradle daemon in any development environment!
+Do NOT use the gradle daemon on continuous integration machines. A fresh start is more desirable in order to avoid problems. 
+./gradlew –status - Gradle daemons status
+./gradlew –stop - Kills all the gradle daemons</p>
+
+<h2 id="the-build-lifecycle">The Build Lifecycle</h2>
+
+<p>The build lifecycle of gradle has three main phases:</p>
+<ol>
+  <li>Initialization - all existing settings.gradle files from the sub-project folders are executed and a project instance is created for each one.</li>
+  <li>Configuration - build.gradle scripts of all projects are executed.</li>
+  <li>Execution - determines the subset of tasks and then executes them.</li>
+</ol>
+
+<h2 id="gradle-basics">Gradle Basics</h2>
+
+<p>Let’s start with a basic task hierarchy:</p>
+
+<p>Insert image here:</p>
+
+<p>These commands should be everything you need to get started with Gradle:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>    ./gradlew dist test - executes dist and test tasks sequentially. Each task, including its dependencies, is executed only once. In this example compileTest was already run for the dist task, so it won't be ran again for the test task.
+    ./gradlew dist -x test - runs dist but excludes test.
+    ./gradlew di - abbreviation works as long as it's unique.
+    ./gradlew dist --continue - execute even when a dependency task fails.
+    ./gradlew -b anotherBuild.gradle - specify a build file.
+    ./gradlew -q - quiet flag, logs just the error.
+    ./gradlew -p project/sub/dir - specify the subdir where to search for tasks.
+    ./gradlew dist --rerun-tasks - force rerun all tasks.
+    ./gradlew projects - print the sub-projects in the current folder.
+    ./gradlew tasks [--all] - print tasks available for current project.
+    ./gradlew help --task dist - print detailed info about a task's usage.
+    ./gradlew dependencies - print project dependency list.
+    ./gradlew dependencies --configuration testCompile - print dependencies from a specified configuration.
+    ./gradlew buildEnvironment - print build script dependencies
+    ./gradlew -q webapp:dependencyInsight --dependency groovy --configuration compile - displays the insight into a specific dependency
+    ./gradlew properties - displays the sub-projects of root project
+    ./gradlew dist --profile - profile the build
+    ./gradlew -m dist test - prints the tasks without running them
+    ./gradlew dist --no-daemon - do not use the daemon for the build
+</code></pre>
+</div>
+
+<p>Some of these commands <strong>may not be available</strong> depending on the version of gradle that you are using.</p>
+
+<h2 id="advanced---further-reading">Advanced - Further Reading</h2>
+
+<p>The following advanced topics may come in handy and they are out of the scope of ‘getting started’:</p>
+<ul>
+  <li>Gradle Plugins</li>
+  <li>Dependency management</li>
+  <li>Publishing artifacts</li>
+  <li>How to configure multi-project builds</li>
+  <li>Continuous build</li>
+  <li>Composite build</li>
+  <li>Writing gradle build scripts</li>
+  <li>Increase memory for gradle daemon - better build performance</li>
+</ul>
+
+			
+			</div><!-- /.container -->
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:mihai.cosareanu@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/mihaicosareanu">github.com/mihaicosareanu</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
