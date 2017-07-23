@@ -6,34 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Welcome to Jekyll! - Mihai Coșăreanu</title>
-<meta property="og:title" content="Welcome to Jekyll!" />
-<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated." />
-<meta property="og:description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated." />
+<title>Typescript Development Environment - Mihai Coșăreanu</title>
+<meta property="og:title" content="Typescript Development Environment" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
 <meta property="og:site_name" content="Mihai Coșăreanu" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2016-09-26T05:39:55+03:00" />
+<meta property="article:published_time" content="2017-06-19T00:00:00+03:00" />
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "headline": "Welcome to Jekyll!",
-    "datePublished": "2016-09-26T05:39:55+03:00",
-    "description": "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.",
-    "url": "/jekyll/update/2016/09/26/welcome-to-jekyll.html"
+    "headline": "Typescript Development Environment",
+    "datePublished": "2017-06-19T00:00:00+03:00",
+    "description": "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.",
+    "url": "/tutorials/typescript-development.html"
   }
 </script>
 <!-- End Jekyll SEO tag -->
 
-  <!--<title>Welcome to Jekyll!</title>-->
-  <!--<meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">-->
+  <!--<title>Typescript Development Environment</title>-->
+  <!--<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">-->
 
   
   
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
-  <link rel="canonical" href="/jekyll/update/2016/09/26/welcome-to-jekyll.html">
+  <link rel="canonical" href="/tutorials/typescript-development.html">
   <link rel="alternate" type="application/rss+xml" title="Mihai Coșăreanu" href="/feed.xml">
 
   
@@ -90,37 +90,29 @@
 </header>
 
 
-    
-
-<div class="container">
+    <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <p>Setting up a development environment with typescript can be challenging because the tools are rapidly evolving and it’s hard to syncrhonize between different tutorials. As such, I am stating the versions that I’m using now, and you should search for better new methods whenever these tools become out of date.</p>
 
-        <div class="post-content" itemprop="articleBody">
-          <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>Tools that you’ll need:
+* Visual Studio Code &gt;= 1.13.1
+* Node.Js &gt;= 8.1.2
+* NPM &gt;= 5.0.2
+* Yarn &gt;= 0.24.5</p>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>This tutorial assumes the following dependency versions:
+* Typescript 2.2
+* Tslint 4.5.1</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>If you come from another language, search for your favorite key mapping extensions for Visual Studio Code.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>Another useful typescript plugin that you could use is tslint.</p>
 
 
-        </div>
-
-        
-      </article>
     </div>
   </div>
 </div>
-
 
 
     <footer class="site-footer">

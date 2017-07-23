@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Getting Started with Gradle - Mihai Coșăreanu</title>
+<meta property="og:title" content="Getting Started with Gradle" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:site_name" content="Mihai Coșăreanu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-06-19T00:00:00+03:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Getting Started with Gradle",
+    "datePublished": "2017-06-19T00:00:00+03:00",
+    "description": "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.",
+    "url": "/tutorials/gradle.html"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+  <!--<title>Getting Started with Gradle</title>-->
+  <!--<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">-->
+
+  
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css">
+  <link rel="canonical" href="/tutorials/gradle.html">
+  <link rel="alternate" type="application/rss+xml" title="Mihai Coșăreanu" href="/feed.xml">
+
+  
+</head>
+
+  <body>
+
+    <header class="site-header" role="banner">
+
+  
+  
+
+  <nav class="navbar navbar-static-top">
+    <div class="container">
+      <button data-target="#main-nav-items" data-toggle="collapse" type="button" class="navbar-toggler hidden-sm-up">
+        ☰
+      </button>
+      <div id="main-nav-items" class="collapse navbar-toggleable-xs">
+        <a class="site-title navbar-brand" href="/">Mihai Coșăreanu</a>
+        <ul class="nav navbar-nav">
+          
+            
+              <li class="nav-item">
+                <a href="/" class="nav-link">
+                  Home
+                </a>
+              </li>
+            
+            
+          
+            
+              <li class="nav-item">
+                <a href="/about/" class="nav-link">
+                  About
+                </a>
+              </li>
+            
+            
+          
+            
+              <li class="nav-item">
+                <a href="/tutorials/" class="nav-link">
+                  Tutorials
+                </a>
+              </li>
+            
+            
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 id="getting-started-with-gradle">Getting Started With Gradle</h1>
+
+<p>I’ve had quite a lot of frustration working with gradle in big projects, especially ones that were organized as many sub-projects, so I started reading the awfully written gradle user guide. As I was reading it I started writing this tutorial, because I realized that there was so little that was actually useful to me as a developer. Hopefully this will be helpful to people who are new to gradle.</p>
+
+<h2 id="gradle">Gradle</h2>
+
+<p><strong>What is gradle?</strong></p>
+
+<p>Gradle is a build tool, similar to Apache Ant or Maven, though it is more powerful. You can specify the project’s dependencies from any repository, manage multiple-project builds, define your own tasks to be run, create plugins for it and lots of other cool stuff.</p>
+
+<p><strong>How is gradle configured?</strong></p>
+
+<p>Gradle loads the configuration properties in this order:</p>
+
+<ol>
+  <li>gradle.properties in project build dir.</li>
+  <li>gradle.properties in gradle user home.</li>
+  <li>system properties, e.g. when <code class="highlighter-rouge">-Dsome.property</code> is set on the command line.</li>
+</ol>
+
+<p><strong>What files are read when running a Gradle task?</strong></p>
+
+<p>When running a gradle task from a project or sub-project folder <code class="highlighter-rouge">build.gradle</code> and <code class="highlighter-rouge">settings.gradle</code> are the files used by gradle to read the project’s task definitions, dependencies and properties. In a multi-project build, the methods and properties of a sub-project are inherited from the parent project.</p>
+
+<p><strong>Where are the gradle distributions stored?</strong></p>
+
+<p>It shouldn’t matter to you, but they are stored in <code class="highlighter-rouge">$USER_HOME/.gradle/wrapper/dists</code>.</p>
+
+<h2 id="gradle-wrapper">Gradle Wrapper</h2>
+
+<p><strong>What is gradlew (Gradle Wrapper)?</strong></p>
+
+<p>Gradle wrapper is nothing more than a shell script that downloads and runs the appropriate version of gradle so you don’t have to. This is useful because you can commit gradle wrapper to git and distribute it, so that when you checkout a project you don’t have to manually install the required gradle version. Also it’s very useful for continuous integration machines so that you don’t manage gradle versions on them.</p>
+
+<p><strong>Gradle wrapper files</strong></p>
+
+<p>Gradle wrapper uses the following files (these should be committed to the project’s git):
+* gradlew (Unix Shell script)
+* gradlew.bat (Windows batch file)
+* gradle/wrapper/gradle-wrapper.jar (Wrapper JAR)
+* gradle/wrapper/gradle-wrapper.properties (Wrapper properties)</p>
+
+<p>Always use gradle wrapper instead of gradle. Simple as that!</p>
+
+<h2 id="gradle-daemon">Gradle Daemon</h2>
+
+<p>Gradle and gradlew by default use a gradle daemon. A gradle daemon is a process running in background that aims to speed up the builds by leveraging caching. 
+IntelliJ, Eclipse, or other software that uses gradle’s tooling API always use a daemon. 
+You can have more than one gradle daemon running on the system (for example one from your IDE and one from running gradlew in terminal). 
+If you’re having caching problems such as running inexistent tests (due to checking out another branch in git), you can kill all the gradle daemons and run the task again. 
+Do use the gradle daemon in any development environment!
+Do NOT use the gradle daemon on continuous integration machines. A fresh start is more desirable in order to avoid problems. 
+./gradlew –status - Gradle daemons status
+./gradlew –stop - Kills all the gradle daemons</p>
+
+<h2 id="the-build-lifecycle">The Build Lifecycle</h2>
+
+<p>The build lifecycle of gradle has three main phases:
+1. Initialization - all existing settings.gradle files from the sub-project folders are executed and a project instance is created for each one.
+2. Configuration - build.gradle scripts of all projects are executed.
+2. Execution - determines the subset of tasks and then executes them.</p>
+
+<h2 id="gradle-basics">Gradle Basics</h2>
+
+<p>Let’s start with a basic task hierarchy:</p>
+
+<p>Insert image here:</p>
+
+<p>These commands should be everything you need to get started with Gradle: 
+<code class="highlighter-rouge">
+./gradlew dist test - executes dist and test tasks sequentially. Each task, including its dependencies, is executed only once. In this example compileTest was already run for the dist task, so it won't be ran again for the test task.
+./gradlew dist -x test - runs dist but excludes test.
+./gradlew di - abbreviation works as long as it's unique.
+./gradlew dist --continue - execute even when a dependency task fails.
+./gradlew -b anotherBuild.gradle - specify a build file.
+./gradlew -q - quiet flag, logs just the error.
+./gradlew -p project/sub/dir - specify the subdir where to search for tasks.
+./gradlew dist --rerun-tasks - force rerun all tasks.
+./gradlew projects - print the sub-projects in the current folder.
+./gradlew tasks [--all] - print tasks available for current project.
+./gradlew help --task dist - print detailed info about a task's usage.
+./gradlew dependencies - print project dependency list.
+./gradlew dependencies --configuration testCompile - print dependencies from a specified configuration.
+./gradlew buildEnvironment - print build script dependencies
+./gradlew -q webapp:dependencyInsight --dependency groovy --configuration compile - displays the insight into a specific dependency
+./gradlew properties - displays the sub-projects of root project
+./gradlew dist --profile - profile the build
+./gradlew -m dist test - prints the tasks without running them
+./gradlew dist --no-daemon - do not use the daemon for the build
+</code></p>
+
+<p>Some of these commands <strong>may not be available</strong> depending on the version of gradle that you are using.</p>
+
+<h2 id="advanced---further-reading">Advanced - Further Reading</h2>
+
+<p>The following advanced topics may come in handy and they are out of the scope of ‘getting started’:
+* Gradle Plugins
+* Dependency management
+* Publishing artifacts
+* How to configure multi-project builds
+* Continuous build
+* Composite build
+* Writing gradle build scripts
+* Increase memory for gradle daemon - better build performance</p>
+
+    </div>
+  </div>
+</div>
+
+
+    <footer class="site-footer">
+  <div class="container">
+    <!---->
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline" id="social-media-list">
+          
+
+          
+            <li>
+              <a href="https://linkedin.com/in/mihaicosareanu">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+            </li>
+          
+
+          
+            <li>
+              <a href="https://www.facebook.com/mihaicosareanu">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+
+          
+            <li>
+              <a href="https://www.youtube.com/mihaicosareanu">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <div class="col-sm-6 copyright">
+        <span class="text-muted pull-right">&copy; 2015, 2017 Mihai Coșăreanu </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider.js"></script>
+    <script src="/assets/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

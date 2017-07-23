@@ -1,5 +1,11 @@
 # Bootstrap 4 + Jekyll
 
+You need to run the following before trying to serve with Jekyll:
+brew install imagemagick
+brew unlink imagemagick
+brew install imagemagick@6 && brew link imagemagick@6 --force
+bundle install
+
 To use: when you have the dependancies as per
 [the docs](https://jekyllrb.com/docs/installation/) you should run
 `bundle install`.
