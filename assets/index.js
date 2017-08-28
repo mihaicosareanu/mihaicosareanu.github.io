@@ -8,3 +8,8 @@ $(document).ready(function () {
         }
     });
 });
+
+$('.mosaicgallery').mosaicflow({
+  itemSelector: '.mosaicflow__item',
+  minItemWidth: 300
+});
