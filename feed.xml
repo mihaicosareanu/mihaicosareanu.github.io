@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Sep 2017 22:21:43 +0300</pubDate>
-    <lastBuildDate>Fri, 22 Sep 2017 22:21:43 +0300</lastBuildDate>
+    <pubDate>Fri, 22 Sep 2017 22:34:00 +0300</pubDate>
+    <lastBuildDate>Fri, 22 Sep 2017 22:34:00 +0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -118,8 +118,8 @@
 &lt;p&gt;Did you like them? Were they engaging? Did they raise your interest? I would really appreciate to hear your comments on YouTube.&lt;/p&gt;
 </description>
         <pubDate>Tue, 20 Oct 2015 05:39:55 +0300</pubDate>
-        <link>/music/2015/10/20/nus-lectures.html</link>
-        <guid isPermaLink="true">/music/2015/10/20/nus-lectures.html</guid>
+        <link>/nus-lectures/</link>
+        <guid isPermaLink="true">/nus-lectures/</guid>
         
         
         <category>music</category>
@@ -313,7 +313,7 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;/music/2015/11/01/steve-vai-masterclass.html&quot;&gt;Steve Vai Masterclass&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/music/2015/10/20/nus-lectures.html&quot;&gt;NUS Lectures&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/nus-lectures/&quot;&gt;NUS Lectures&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 15 Oct 2015 05:39:55 +0300</pubDate>
@@ -359,13 +359,13 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;h1 id=&quot;what-am-i-doing-now&quot;&gt;What Am I Doing Now?&lt;/h1&gt;
 
-&lt;p&gt;Currently I am working as a cloud software engineer for Vector Watch. In my free time I play guitar, compose musical pieces, practice sound engineering, take walks, meet people, travel around and feed my curiosity by reading books and taking courses on various subjects.&lt;/p&gt;
+&lt;p&gt;Currently I am working as a cloud software engineer at Fitbit. In my free time I play guitar, compose musical pieces, practice sound engineering, take walks, meet people, travel around and feed my curiosity by reading books and taking courses on various subjects.&lt;/p&gt;
 
 &lt;h1 id=&quot;get-in-touch-with-me&quot;&gt;Get in Touch with Me&lt;/h1&gt;
 
 &lt;p&gt;If you think I could be of value to you or if you just want to get to know me, make sure to drop a message. I am always keen on meeting new people, discovering new ideas, sharing my passion and sharpening my mind :)&lt;/p&gt;
 
-&lt;p&gt;For a more detailed story of my music, you can read more &lt;a href=&quot;/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a more detailed story of my music, you can read more &lt;a href=&quot;/my-music-story/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Oct 2015 05:39:55 +0300</pubDate>
         <link>/about/</link>
