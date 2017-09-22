@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Sep 2017 21:10:24 +0300</pubDate>
-    <lastBuildDate>Fri, 22 Sep 2017 21:10:24 +0300</lastBuildDate>
+    <pubDate>Fri, 22 Sep 2017 21:58:46 +0300</pubDate>
+    <lastBuildDate>Fri, 22 Sep 2017 21:58:46 +0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -64,7 +64,9 @@
 
 &lt;p&gt;I am very happy that I had the opportunity to attend and to fulfill a part of my dream. For the fans of autographs I’ll post my JS1200 headstock signature and my Jemini pedal.&lt;/p&gt;
 
-&lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+&lt;p&gt;
+            &lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+                
     
 
  &lt;div class=&quot;mosaicflow__item&quot;&gt;
@@ -80,7 +82,9 @@
     &lt;p&gt;JS1200 headstock signed by Steve Vai.&lt;/p&gt;
  &lt;/div&gt;
 
-&lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/p&gt;
 
 &lt;p&gt;Thank you Steve for such a great day, for an unforgettable moment and for words of wisdom that will guide me through life, no matter what.&lt;/p&gt;
 </description>
@@ -101,14 +105,14 @@
 
 &lt;p&gt;I think that everybody should teach something that they’re passionate about because they might inspire passion in others. For that matter, I thought that the concept of explaining music theory using feelings would really raise interest and it worked. I received amazing feedback from the students. Here is the full video:&lt;/p&gt;
 
-&lt;div class=&quot;centered&quot;&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IBPrpnK0Sf8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;embed-responsive centered&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IBPrpnK0Sf8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Thanks to the great feedback received, professor Wang asked me to do another short lecture on introduction to MIDI. Musical Instrument Digital Interface is a protocol that allows musical equipment and computers to talk to each other. This lecture is more on the technical side, but it should be interesting for musicians as well:&lt;/p&gt;
 
-&lt;div class=&quot;centered&quot;&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jT8lXP-H8HA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;embed-responsive centered&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jT8lXP-H8HA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Did you like them? Were they engaging? Did they raise your interest? I would really appreciate to hear your comments on YouTube.&lt;/p&gt;
@@ -134,18 +138,23 @@
 
 &lt;p&gt;I remember trying to imitate songs heard on tv like the intro to Cow and Chicken, but the most vivid memory is about the first concert that I’ve ever seen, Guitar Expo ’92 Sevilla, on a VHS tape. That’s how I got to know Joe Satriani, Steve Vai and Brian May. There were many others playing, but this is the music that stayed with me until now (I think I was around 6 when that was happening). I tried to play along with those drummers.&lt;/p&gt;
 
-&lt;div class=&quot;centered&quot;&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5TfcDz5K_NQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;div class=&quot;embed-responsive centered&quot;&gt;
+    &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5TfcDz5K_NQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;One thing worth mentioning is that when I saw my father practicing the guitar, I didn’t understand at all why a piece of wood with some wires would be so attractive to him, it looked so boring.&lt;/p&gt;
 
 &lt;p&gt;Going further, when I was in primary school my father bought a VHS tape with Dave Weckl – Back to Basics, one of my favourite drummers, and I watched it over and over again. Then, after my father was convinced that I want to practice, he made a big financial effort and bought me a set of Romanian drums, green ones, with a jazzy cymbal stand, and two stickers with BMW and Champion on them. There was only one problem, I couldn’t play them in my apartment so I got to use blankets on them (which ripped the fun out of the game).&lt;/p&gt;
 
-&lt;div class=&quot;mosaicflow__item&quot;&gt;
+&lt;p&gt;
+    
+
+ &lt;div class=&quot;mosaicflow__item&quot;&gt;
     &lt;img class=&quot;img-fluid&quot; src=&quot;/images/old-romanian-drumset.jpg&quot; alt=&quot;My first set of Romanian drums.&quot; srcset=&quot;            /assets/resized/480/old-romanian-drumset.jpg 480w,            /assets/resized/800/old-romanian-drumset.jpg 800w,            /assets/resized/1200/old-romanian-drumset.jpg 1200w,    &quot; /&gt;
     &lt;p&gt;My first set of Romanian drums.&lt;/p&gt;
  &lt;/div&gt;
+
+&lt;/p&gt;
 
 &lt;p&gt;I tried to take lessons but it didn’t keep me interested, I caught on pretty fast so I got bored and I abandoned them. I moved the drums at my grandmother’s place so that I could play them without blankets. I went there for a couple of weeks during the summer, playing along with music on tape. Until highschool, playing the drums remained a nice hobby for me, I didn’t have whom to share it with.&lt;/p&gt;
 
@@ -162,7 +171,9 @@
 
 &lt;p&gt;Here are two pictures of us at our second or third rehearsal:&lt;/p&gt;
 
-&lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+&lt;p&gt;
+            &lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+                
     
 
  &lt;div class=&quot;mosaicflow__item&quot;&gt;
@@ -178,7 +189,9 @@
     &lt;p&gt;Desant band at a rehearsal.&lt;/p&gt;
  &lt;/div&gt;
 
-&lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/p&gt;
 
 &lt;p&gt;Listening to our rehearsal recording now I find it funny, but at that time it really seemed an ok quality. We played at the freshman’s prom, and although it wasn’t a great success, it surely wasn’t a fail.&lt;/p&gt;
 
@@ -197,7 +210,9 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;As the band got more serious, I had a good reason to convince my parents to stretch a bit and buy me a good drum set. I bought this awesome Pearl Export EX series kit with jet black hardware and double bass drum pedal. It was awesome, a dramatic change in the fun level of playing drums.&lt;/p&gt;
 
-&lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+&lt;p&gt;
+            &lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+                
     
 
  &lt;div class=&quot;mosaicflow__item&quot;&gt;
@@ -221,7 +236,9 @@ would you like to meet and talk?”&lt;br /&gt;
     &lt;p&gt;First real drum set, Pearl Export EX Series jet black&lt;/p&gt;
  &lt;/div&gt;
 
-&lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/p&gt;
 
 &lt;h1 id=&quot;meeting-the-six-stringed-piece-of-wood&quot;&gt;Meeting the Six-Stringed Piece of Wood&lt;/h1&gt;
 
