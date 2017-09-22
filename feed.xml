@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Sep 2017 21:58:46 +0300</pubDate>
-    <lastBuildDate>Fri, 22 Sep 2017 21:58:46 +0300</lastBuildDate>
+    <pubDate>Fri, 22 Sep 2017 22:21:43 +0300</pubDate>
+    <lastBuildDate>Fri, 22 Sep 2017 22:21:43 +0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -105,13 +105,13 @@
 
 &lt;p&gt;I think that everybody should teach something that they’re passionate about because they might inspire passion in others. For that matter, I thought that the concept of explaining music theory using feelings would really raise interest and it worked. I received amazing feedback from the students. Here is the full video:&lt;/p&gt;
 
-&lt;div class=&quot;embed-responsive centered&quot;&gt;
+&lt;div class=&quot;embed-responsive embed-responsive-16by9 centered&quot;&gt;
     &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IBPrpnK0Sf8&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Thanks to the great feedback received, professor Wang asked me to do another short lecture on introduction to MIDI. Musical Instrument Digital Interface is a protocol that allows musical equipment and computers to talk to each other. This lecture is more on the technical side, but it should be interesting for musicians as well:&lt;/p&gt;
 
-&lt;div class=&quot;embed-responsive centered&quot;&gt;
+&lt;div class=&quot;embed-responsive embed-responsive-16by9 centered&quot;&gt;
     &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/jT8lXP-H8HA&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -138,7 +138,7 @@
 
 &lt;p&gt;I remember trying to imitate songs heard on tv like the intro to Cow and Chicken, but the most vivid memory is about the first concert that I’ve ever seen, Guitar Expo ’92 Sevilla, on a VHS tape. That’s how I got to know Joe Satriani, Steve Vai and Brian May. There were many others playing, but this is the music that stayed with me until now (I think I was around 6 when that was happening). I tried to play along with those drummers.&lt;/p&gt;
 
-&lt;div class=&quot;embed-responsive centered&quot;&gt;
+&lt;div class=&quot;embed-responsive embed-responsive-16by9 centered&quot;&gt;
     &lt;iframe class=&quot;embed-responsive-item&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/5TfcDz5K_NQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
@@ -311,8 +311,10 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;I really appreciate you for taking your time to read one of the stories of my life. I hope you found it interesting and maybe motivational. Here are the links that I promised above:&lt;/p&gt;
 
-&lt;p&gt;[Steve Vai Masterclass]
-[NUS Lectures]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/music/2015/11/01/steve-vai-masterclass.html&quot;&gt;Steve Vai Masterclass&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/music/2015/10/20/nus-lectures.html&quot;&gt;NUS Lectures&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         <pubDate>Thu, 15 Oct 2015 05:39:55 +0300</pubDate>
         <link>/my-music-story/</link>
