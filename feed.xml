@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 22 Sep 2017 22:45:46 +0300</pubDate>
-    <lastBuildDate>Fri, 22 Sep 2017 22:45:46 +0300</lastBuildDate>
+    <pubDate>Sat, 30 Sep 2017 18:06:21 +0300</pubDate>
+    <lastBuildDate>Sat, 30 Sep 2017 18:06:21 +0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -65,23 +65,15 @@
 &lt;p&gt;I am very happy that I had the opportunity to attend and to fulfill a part of my dream. For the fans of autographs I’ll post my JS1200 headstock signature and my Jemini pedal.&lt;/p&gt;
 
 &lt;p&gt;
-            &lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+            &lt;div id=&quot;gallery&quot; class=&quot;gallery&quot; style=&quot;display:none;&quot;&gt;
                 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/Ibanez-Jemini-signed-Steve-Vai.jpg&quot; alt=&quot;Ibanez Jemini Signed by Steve Vai.&quot; srcset=&quot;            /assets/resized/480/Ibanez-Jemini-signed-Steve-Vai.jpg 480w,            /assets/resized/800/Ibanez-Jemini-signed-Steve-Vai.jpg 800w,            /assets/resized/1200/Ibanez-Jemini-signed-Steve-Vai.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;Ibanez Jemini Signed by Steve Vai.&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/Ibanez-Jemini-signed-Steve-Vai.jpg&quot; alt=&quot;Ibanez Jemini Signed by Steve Vai.&quot; srcset=&quot;            /assets/resized/480/Ibanez-Jemini-signed-Steve-Vai.jpg 480w,            /assets/resized/800/Ibanez-Jemini-signed-Steve-Vai.jpg 800w,            /assets/resized/1200/Ibanez-Jemini-signed-Steve-Vai.jpg 1200w,    &quot; /&gt;
 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/JS1200-signed-headstock-Steve-Vai.jpg&quot; alt=&quot;JS1200 headstock signed by Steve Vai.&quot; srcset=&quot;            /assets/resized/480/JS1200-signed-headstock-Steve-Vai.jpg 480w,            /assets/resized/800/JS1200-signed-headstock-Steve-Vai.jpg 800w,            /assets/resized/1200/JS1200-signed-headstock-Steve-Vai.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;JS1200 headstock signed by Steve Vai.&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/JS1200-signed-headstock-Steve-Vai.jpg&quot; alt=&quot;JS1200 headstock signed by Steve Vai.&quot; srcset=&quot;            /assets/resized/480/JS1200-signed-headstock-Steve-Vai.jpg 480w,            /assets/resized/800/JS1200-signed-headstock-Steve-Vai.jpg 800w,            /assets/resized/1200/JS1200-signed-headstock-Steve-Vai.jpg 1200w,    &quot; /&gt;
 
             &lt;/div&gt;
         &lt;/p&gt;
@@ -147,14 +139,14 @@
 &lt;p&gt;Going further, when I was in primary school my father bought a VHS tape with Dave Weckl – Back to Basics, one of my favourite drummers, and I watched it over and over again. Then, after my father was convinced that I want to practice, he made a big financial effort and bought me a set of Romanian drums, green ones, with a jazzy cymbal stand, and two stickers with BMW and Champion on them. There was only one problem, I couldn’t play them in my apartment so I got to use blankets on them (which ripped the fun out of the game).&lt;/p&gt;
 
 &lt;p&gt;
+            &lt;div id=&quot;gallery&quot; class=&quot;gallery&quot; style=&quot;display:none;&quot;&gt;
+                
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/old-romanian-drumset.jpg&quot; alt=&quot;My first set of Romanian drums.&quot; srcset=&quot;            /assets/resized/480/old-romanian-drumset.jpg 480w,            /assets/resized/800/old-romanian-drumset.jpg 800w,            /assets/resized/1200/old-romanian-drumset.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;My first set of Romanian drums.&lt;/p&gt;
- &lt;/div&gt;
+&lt;img src=&quot;/images/old-romanian-drumset.jpg&quot; alt=&quot;My first set of Romanian drums.&quot; srcset=&quot;            /assets/resized/480/old-romanian-drumset.jpg 480w,            /assets/resized/800/old-romanian-drumset.jpg 800w,            /assets/resized/1200/old-romanian-drumset.jpg 1200w,    &quot; /&gt;
 
-&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/p&gt;
 
 &lt;p&gt;I tried to take lessons but it didn’t keep me interested, I caught on pretty fast so I got bored and I abandoned them. I moved the drums at my grandmother’s place so that I could play them without blankets. I went there for a couple of weeks during the summer, playing along with music on tape. Until highschool, playing the drums remained a nice hobby for me, I didn’t have whom to share it with.&lt;/p&gt;
 
@@ -172,23 +164,15 @@
 &lt;p&gt;Here are two pictures of us at our second or third rehearsal:&lt;/p&gt;
 
 &lt;p&gt;
-            &lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+            &lt;div id=&quot;gallery&quot; class=&quot;gallery&quot; style=&quot;display:none;&quot;&gt;
                 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/Desant-band-2.jpg&quot; alt=&quot;Desant band at a rehearsal.&quot; srcset=&quot;            /assets/resized/480/Desant-band-2.jpg 480w,            /assets/resized/800/Desant-band-2.jpg 800w,            /assets/resized/1200/Desant-band-2.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;Desant band at a rehearsal.&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/Desant-band-2.jpg&quot; alt=&quot;Desant band at a rehearsal.&quot; srcset=&quot;            /assets/resized/480/Desant-band-2.jpg 480w,            /assets/resized/800/Desant-band-2.jpg 800w,            /assets/resized/1200/Desant-band-2.jpg 1200w,    &quot; /&gt;
 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/Desant-band.jpg&quot; alt=&quot;Desant band at a rehearsal.&quot; srcset=&quot;            /assets/resized/480/Desant-band.jpg 480w,            /assets/resized/800/Desant-band.jpg 800w,            /assets/resized/1200/Desant-band.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;Desant band at a rehearsal.&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/Desant-band.jpg&quot; alt=&quot;Desant band at a rehearsal.&quot; srcset=&quot;            /assets/resized/480/Desant-band.jpg 480w,            /assets/resized/800/Desant-band.jpg 800w,            /assets/resized/1200/Desant-band.jpg 1200w,    &quot; /&gt;
 
             &lt;/div&gt;
         &lt;/p&gt;
@@ -211,31 +195,19 @@ would you like to meet and talk?”&lt;br /&gt;
 &lt;p&gt;As the band got more serious, I had a good reason to convince my parents to stretch a bit and buy me a good drum set. I bought this awesome Pearl Export EX series kit with jet black hardware and double bass drum pedal. It was awesome, a dramatic change in the fun level of playing drums.&lt;/p&gt;
 
 &lt;p&gt;
-            &lt;div class=&quot;clearfix mosaicgallery&quot;&gt;
+            &lt;div id=&quot;gallery&quot; class=&quot;gallery&quot; style=&quot;display:none;&quot;&gt;
                 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/pearl-export-ex-jet-black.jpg&quot; alt=&quot;First real drum set, Pearl Export EX Series jet black&quot; srcset=&quot;            /assets/resized/480/pearl-export-ex-jet-black.jpg 480w,            /assets/resized/800/pearl-export-ex-jet-black.jpg 800w,            /assets/resized/1200/pearl-export-ex-jet-black.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;First real drum set, Pearl Export EX Series jet black&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/pearl-export-ex-jet-black.jpg&quot; alt=&quot;First real drum set, Pearl Export EX Series jet black&quot; srcset=&quot;            /assets/resized/480/pearl-export-ex-jet-black.jpg 480w,            /assets/resized/800/pearl-export-ex-jet-black.jpg 800w,            /assets/resized/1200/pearl-export-ex-jet-black.jpg 1200w,    &quot; /&gt;
 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/pearl-export-jet-black-2.jpg&quot; alt=&quot;First real drum set, Pearl Export EX Series jet black&quot; srcset=&quot;            /assets/resized/480/pearl-export-jet-black-2.jpg 480w,            /assets/resized/800/pearl-export-jet-black-2.jpg 800w,            /assets/resized/1200/pearl-export-jet-black-2.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;First real drum set, Pearl Export EX Series jet black&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/pearl-export-jet-black-2.jpg&quot; alt=&quot;First real drum set, Pearl Export EX Series jet black&quot; srcset=&quot;            /assets/resized/480/pearl-export-jet-black-2.jpg 480w,            /assets/resized/800/pearl-export-jet-black-2.jpg 800w,            /assets/resized/1200/pearl-export-jet-black-2.jpg 1200w,    &quot; /&gt;
 
     
 
- &lt;div class=&quot;mosaicflow__item&quot;&gt;
-    &lt;img class=&quot;img-fluid&quot; src=&quot;/images/pearl-export-jet-black-3.jpg&quot; alt=&quot;First real drum set, Pearl Export EX Series jet black&quot; srcset=&quot;            /assets/resized/480/pearl-export-jet-black-3.jpg 480w,            /assets/resized/800/pearl-export-jet-black-3.jpg 800w,            /assets/resized/1200/pearl-export-jet-black-3.jpg 1200w,    &quot; /&gt;
-    &lt;p&gt;First real drum set, Pearl Export EX Series jet black&lt;/p&gt;
- &lt;/div&gt;
-
+&lt;img src=&quot;/images/pearl-export-jet-black-3.jpg&quot; alt=&quot;First real drum set, Pearl Export EX Series jet black&quot; srcset=&quot;            /assets/resized/480/pearl-export-jet-black-3.jpg 480w,            /assets/resized/800/pearl-export-jet-black-3.jpg 800w,            /assets/resized/1200/pearl-export-jet-black-3.jpg 1200w,    &quot; /&gt;
 
             &lt;/div&gt;
         &lt;/p&gt;
