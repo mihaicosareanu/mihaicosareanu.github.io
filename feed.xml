@@ -6,9 +6,150 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Oct 2017 12:49:33 +0300</pubDate>
-    <lastBuildDate>Sun, 08 Oct 2017 12:49:33 +0300</lastBuildDate>
+    <pubDate>Sun, 08 Oct 2017 13:58:01 +0300</pubDate>
+    <lastBuildDate>Sun, 08 Oct 2017 13:58:01 +0300</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Getting Started with Gradle</title>
+        <description>&lt;p&gt;This guide was created based on the gradle user guide available for &lt;strong&gt;version 3.4.1&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’ve had quite a lot of frustration working with gradle in big projects, especially ones that were organized as many sub-projects, so I started reading the awfully written gradle user guide. As I was reading it I started writing this tutorial, because I realized that there was so little that was actually useful to me as a developer. Hopefully this will be helpful to people who are new to gradle.&lt;/p&gt;
+
+&lt;h1 id=&quot;gradle&quot;&gt;Gradle&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;What is gradle?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gradle is a build tool, similar to Apache Ant or Maven, though it is more powerful. You can specify the project’s dependencies from any repository, manage multiple-project builds, define your own tasks to be run, create plugins for it and lots of other cool stuff.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How is gradle configured?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gradle loads the configuration properties in this order:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gradle.properties&lt;/code&gt; in project build dir.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gradle.properties&lt;/code&gt; in gradle user home.&lt;/li&gt;
+  &lt;li&gt;system properties, e.g. when &lt;code class=&quot;highlighter-rouge&quot;&gt;-Dsome.property&lt;/code&gt; is set on the command line.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;What files are read when running a Gradle task?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When running a gradle task from a project or sub-project folder build.gradle and settings.gradle are the files used by gradle to read the project’s task definitions, dependencies and properties. In a multi-project build, the methods and properties of a sub-project &lt;strong&gt;are inherited from the parent project&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Where are the gradle distributions stored?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It shouldn’t matter to you, but they are stored in &lt;code class=&quot;highlighter-rouge&quot;&gt;$USER_HOME/.gradle/wrapper/dists&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;gradle-wrapper&quot;&gt;Gradle Wrapper&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;What is gradlew (Gradle Wrapper)?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gradle wrapper is nothing more than a shell script that downloads and runs the appropriate version of gradle so you don’t have to. This is useful because you can commit gradle wrapper to git and distribute it, so that when you checkout a project you don’t have to manually install the required gradle version. Also it’s very useful for continuous integration machines so that you don’t manage gradle versions on them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Gradle wrapper files&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Gradle wrapper uses the following files (these should be committed to the project’s git):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gradlew&lt;/code&gt; (Unix Shell script)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gradlew.bat&lt;/code&gt; (Windows batch file)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gradle/wrapper/gradle-wrapper.jar&lt;/code&gt; (Wrapper JAR)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gradle/wrapper/gradle-wrapper.properties&lt;/code&gt; (Wrapper properties)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Always&lt;/strong&gt; use gradle wrapper instead of gradle. Simple as that!&lt;/p&gt;
+
+&lt;h1 id=&quot;gradle-daemon&quot;&gt;Gradle Daemon&lt;/h1&gt;
+
+&lt;p&gt;Gradle and gradlew by default use a gradle daemon. A gradle daemon is a process running in background that aims to speed up the builds by leveraging caching.&lt;/p&gt;
+
+&lt;p&gt;IntelliJ, Eclipse, or other software that uses gradle’s tooling API always use a daemon.&lt;/p&gt;
+
+&lt;p&gt;You can have more than one gradle daemon running on the system (for example one from your IDE and one from running &lt;code class=&quot;highlighter-rouge&quot;&gt;gradlew&lt;/code&gt; in terminal).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you’re having caching problems&lt;/strong&gt; such as running inexistent tests (due to checking out another branch in git), you can kill all the gradle daemons and run the task again.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;DO&lt;/strong&gt; use the gradle daemon in any development environment!&lt;br /&gt;
+&lt;strong&gt;DO NOT&lt;/strong&gt; use the gradle daemon on continuous integration machines. A fresh start is more desirable in order to avoid problems.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew --status&lt;/code&gt; - Gradle daemons status&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew --stop&lt;/code&gt; - Kills all the gradle daemons&lt;/p&gt;
+
+&lt;h1 id=&quot;the-build-lifecycle&quot;&gt;The Build Lifecycle&lt;/h1&gt;
+
+&lt;p&gt;The build lifecycle of gradle has three main phases:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Initialization - all existing &lt;code class=&quot;highlighter-rouge&quot;&gt;settings.gradle&lt;/code&gt; files from the sub-project folders are executed and a project instance is created for each one.&lt;/li&gt;
+  &lt;li&gt;Configuration - The &lt;code class=&quot;highlighter-rouge&quot;&gt;build.gradle&lt;/code&gt; scripts of all projects are executed.&lt;/li&gt;
+  &lt;li&gt;Execution - determines the subset of tasks and then executes them.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;gradle-basics&quot;&gt;Gradle Basics&lt;/h1&gt;
+
+&lt;p&gt;Let’s start with a basic task hierarchy:&lt;/p&gt;
+
+&lt;p&gt;
+            &lt;div id=&quot;gallery&quot; class=&quot;gallery&quot; style=&quot;display:none;&quot;&gt;
+                
+    
+
+&lt;img src=&quot;/images/tutorials/gradle-tasks.png&quot; alt=&quot;Task hierarchy example.&quot; srcset=&quot;            /assets/resized/480/gradle-tasks.png 480w,    &quot; /&gt;
+
+            &lt;/div&gt;
+        &lt;/p&gt;
+
+&lt;p&gt;These commands should be everything you need to get started with Gradle:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dist test&lt;/code&gt; - executes dist and test tasks sequentially. Each task, including its dependencies, is executed only once. In this example compileTest was already run for the dist task, so it won’t be ran again for the test task.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dist -x test&lt;/code&gt; - runs dist but excludes test.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew di&lt;/code&gt; - abbreviation works as long as it’s unique.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dist --continue&lt;/code&gt; - execute even when a dependency task fails.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew -b anotherBuild.gradle&lt;/code&gt; - specify a build file.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew -q&lt;/code&gt; - quiet flag, logs just the error.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew -p project/sub/dir&lt;/code&gt; - specify the subdir where to search for tasks.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dist --rerun-tasks&lt;/code&gt; - force rerun all tasks.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew projects&lt;/code&gt; - print the sub-projects in the current folder.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew tasks [--all]&lt;/code&gt; - print tasks available for current project.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew help --task dist&lt;/code&gt; - print detailed info about a task’s usage.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dependencies&lt;/code&gt; - print project dependency list.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dependencies --configuration testCompile&lt;/code&gt; - print dependencies from a specified configuration.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew buildEnvironment&lt;/code&gt; - print build script dependencies&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew -q webapp:dependencyInsight --dependency groovy --configuration compile&lt;/code&gt; - displays the insight into a specific dependency&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew properties&lt;/code&gt; - displays the sub-projects of root project&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dist&lt;/code&gt; –profile - profile the build&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew -m dist test&lt;/code&gt; - prints the tasks without running them&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew dist --no-daemon&lt;/code&gt; - do not use the daemon for the build&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of these commands &lt;strong&gt;may not be available&lt;/strong&gt; depending on the version of gradle that you are using.&lt;/p&gt;
+
+&lt;h1 id=&quot;advanced---further-reading&quot;&gt;Advanced - Further Reading&lt;/h1&gt;
+
+&lt;p&gt;The following advanced topics may come in handy and they are out of the scope of ‘getting started’:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gradle Plugins&lt;/li&gt;
+  &lt;li&gt;Dependency management&lt;/li&gt;
+  &lt;li&gt;Publishing artifacts&lt;/li&gt;
+  &lt;li&gt;How to configure multi-project builds&lt;/li&gt;
+  &lt;li&gt;Continuous build&lt;/li&gt;
+  &lt;li&gt;Composite build&lt;/li&gt;
+  &lt;li&gt;Writing gradle build scripts&lt;/li&gt;
+  &lt;li&gt;Increase memory for gradle daemon - better build performance&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 05 Apr 2017 05:39:55 +0300</pubDate>
+        <link>/getting-started-with-gradle/</link>
+        <guid isPermaLink="true">/getting-started-with-gradle/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>Steve Vai Masterclass</title>
