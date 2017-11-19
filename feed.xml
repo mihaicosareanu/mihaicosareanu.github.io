@@ -6,9 +6,9 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Oct 2017 14:30:58 +0300</pubDate>
-    <lastBuildDate>Sun, 08 Oct 2017 14:30:58 +0300</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <pubDate>Sun, 19 Nov 2017 16:47:55 +0200</pubDate>
+    <lastBuildDate>Sun, 19 Nov 2017 16:47:55 +0200</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>Getting Started with Gradle</title>
@@ -16,7 +16,7 @@
 
 &lt;p&gt;I’ve had quite a lot of frustration working with gradle in big projects, especially ones that were organized as many sub-projects, so I started reading the awfully written gradle user guide. As I was reading it I started writing this tutorial, because I realized that there was so little that was actually useful to me as a developer. Hopefully this will be helpful to people who are new to gradle.&lt;/p&gt;
 
-&lt;h1 id=&quot;gradle&quot;&gt;Gradle&lt;/h1&gt;
+&lt;h2 id=&quot;gradle&quot;&gt;Gradle&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;What is gradle?&lt;/strong&gt;&lt;/p&gt;
 
@@ -40,7 +40,7 @@
 
 &lt;p&gt;It shouldn’t matter to you, but they are stored in &lt;code class=&quot;highlighter-rouge&quot;&gt;$USER_HOME/.gradle/wrapper/dists&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h1 id=&quot;gradle-wrapper&quot;&gt;Gradle Wrapper&lt;/h1&gt;
+&lt;h2 id=&quot;gradle-wrapper&quot;&gt;Gradle Wrapper&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;What is gradlew (Gradle Wrapper)?&lt;/strong&gt;&lt;/p&gt;
 
@@ -59,7 +59,7 @@
 
 &lt;p&gt;&lt;strong&gt;Always&lt;/strong&gt; use gradle wrapper instead of gradle. Simple as that!&lt;/p&gt;
 
-&lt;h1 id=&quot;gradle-daemon&quot;&gt;Gradle Daemon&lt;/h1&gt;
+&lt;h2 id=&quot;gradle-daemon&quot;&gt;Gradle Daemon&lt;/h2&gt;
 
 &lt;p&gt;Gradle and gradlew by default use a gradle daemon. A gradle daemon is a process running in background that aims to speed up the builds by leveraging caching.&lt;/p&gt;
 
@@ -72,10 +72,10 @@
 &lt;p&gt;&lt;strong&gt;DO&lt;/strong&gt; use the gradle daemon in any development environment!&lt;br /&gt;
 &lt;strong&gt;DO NOT&lt;/strong&gt; use the gradle daemon on continuous integration machines. A fresh start is more desirable in order to avoid problems.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew --status&lt;/code&gt; - Gradle daemons status&lt;br /&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew --status&lt;/code&gt; - Gradle daemons status
 &lt;code class=&quot;highlighter-rouge&quot;&gt;./gradlew --stop&lt;/code&gt; - Kills all the gradle daemons&lt;/p&gt;
 
-&lt;h1 id=&quot;the-build-lifecycle&quot;&gt;The Build Lifecycle&lt;/h1&gt;
+&lt;h2 id=&quot;the-build-lifecycle&quot;&gt;The Build Lifecycle&lt;/h2&gt;
 
 &lt;p&gt;The build lifecycle of gradle has three main phases:&lt;/p&gt;
 
@@ -85,7 +85,7 @@
   &lt;li&gt;Execution - determines the subset of tasks and then executes them.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;gradle-basics&quot;&gt;Gradle Basics&lt;/h1&gt;
+&lt;h2 id=&quot;gradle-basics&quot;&gt;Gradle Basics&lt;/h2&gt;
 
 &lt;p&gt;Let’s start with a basic task hierarchy:&lt;/p&gt;
 
@@ -125,7 +125,7 @@
 
 &lt;p&gt;Some of these commands &lt;strong&gt;may not be available&lt;/strong&gt; depending on the version of gradle that you are using.&lt;/p&gt;
 
-&lt;h1 id=&quot;advanced---further-reading&quot;&gt;Advanced - Further Reading&lt;/h1&gt;
+&lt;h2 id=&quot;advanced---further-reading&quot;&gt;Advanced - Further Reading&lt;/h2&gt;
 
 &lt;p&gt;The following advanced topics may come in handy and they are out of the scope of ‘getting started’:&lt;/p&gt;
 
@@ -161,7 +161,7 @@
 
 &lt;p&gt;Not to mention the fact that you could bring your guitar and jam with Steve, a thing that I wished for since I started playing Steve’s songs (although in my dreams it was a live concert, but hey! It’s an opportunity as well, isn’t it?).&lt;/p&gt;
 
-&lt;h1 id=&quot;how-it-happened&quot;&gt;How It Happened&lt;/h1&gt;
+&lt;h2 id=&quot;how-it-happened&quot;&gt;How It Happened&lt;/h2&gt;
 
 &lt;p&gt;We needed to show up around 4 o’clock, an hour before the masterclass begun. The rules seemed to be pretty strict, no mobile phones and no cameras, they told us we are going to be searched, although they allowed us to enter with the mobile phones without using them.&lt;/p&gt;
 
@@ -169,7 +169,7 @@
 
 &lt;p&gt;Steve came in, he introduced himself for those who didn’t know him (I doubt that there was anybody who came at the event without knowing what it’s about). He told us “the agenda”: first he is going to talk on some subjects, then we could engage in discussions by asking questions, then the jam session, then the lucky draw and finally the autograph and photo session.&lt;/p&gt;
 
-&lt;h1 id=&quot;teachings-of-steve&quot;&gt;Teachings of Steve&lt;/h1&gt;
+&lt;h2 id=&quot;teachings-of-steve&quot;&gt;Teachings of Steve&lt;/h2&gt;
 
 &lt;p&gt;Here’s a short summary of Steve’s talk: Each of us is capable of doing something better or different than the rest of the world. Our mission is to identify what that thing is, what we enjoy doing, and once we find it we should nurture that passion.&lt;/p&gt;
 
@@ -187,7 +187,7 @@
 
 &lt;p&gt;Another interesting subject, that came from a question as well, was about the musical industry, how to protect your intellectual property, how to obtain copyright, why you should do that early in your career, how he did it, and what he learned from Frank Zappa.&lt;/p&gt;
 
-&lt;h1 id=&quot;jam-session&quot;&gt;Jam Session&lt;/h1&gt;
+&lt;h2 id=&quot;jam-session&quot;&gt;Jam Session&lt;/h2&gt;
 
 &lt;p&gt;After Steve’s talk, the awaited jam session followed. He asked us who would like to participate. I got emotional and shy and hesitated a bit but then I told myself that if I don’t raise my hand now, I would regret forever, so I forced myself and I raised it. We took our guitars and queued near the stage.&lt;/p&gt;
 
@@ -199,7 +199,7 @@
 
 &lt;p&gt;I felt great, even if I wasn’t able to prove myself like I would have liked.&lt;/p&gt;
 
-&lt;h1 id=&quot;ending&quot;&gt;Ending&lt;/h1&gt;
+&lt;h2 id=&quot;ending&quot;&gt;Ending&lt;/h2&gt;
 
 &lt;p&gt;After the jam session, the winner of the Ibanez guitar was drawn and the masterclass was over. It felt a bit short, it was announced to be around 3 hours and it only lasted for 2.&lt;/p&gt;
 
@@ -261,7 +261,7 @@
     
       <item>
         <title>My Music Story</title>
-        <description>&lt;h1 id=&quot;how-it-all-started&quot;&gt;How It All Started&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;how-it-all-started&quot;&gt;How It All Started&lt;/h2&gt;
 
 &lt;p&gt;When I was a kid, my father Cornel Cosareanu was one of the most respected guitarists in my hometown. He was in two bands, one called IVO with a blues-rock centered style with club concerts and big stages, and one called Sincron that played at weddings and other events.&lt;/p&gt;
 
@@ -291,7 +291,7 @@
 
 &lt;p&gt;I tried to take lessons but it didn’t keep me interested, I caught on pretty fast so I got bored and I abandoned them. I moved the drums at my grandmother’s place so that I could play them without blankets. I went there for a couple of weeks during the summer, playing along with music on tape. Until highschool, playing the drums remained a nice hobby for me, I didn’t have whom to share it with.&lt;/p&gt;
 
-&lt;h1 id=&quot;highschool-of-rockfalling-for-the-drums&quot;&gt;Highschool of Rock/Falling for the Drums&lt;/h1&gt;
+&lt;h2 id=&quot;highschool-of-rockfalling-for-the-drums&quot;&gt;Highschool of Rock/Falling for the Drums&lt;/h2&gt;
 
 &lt;p&gt;Highschool came, and I got to know a couple of friends interested in music, so in my freshman year we started a band called Desant. The other band members were:&lt;/p&gt;
 
@@ -353,7 +353,7 @@ would you like to meet and talk?”&lt;br /&gt;
             &lt;/div&gt;
         &lt;/p&gt;
 
-&lt;h1 id=&quot;meeting-the-six-stringed-piece-of-wood&quot;&gt;Meeting the Six-Stringed Piece of Wood&lt;/h1&gt;
+&lt;h2 id=&quot;meeting-the-six-stringed-piece-of-wood&quot;&gt;Meeting the Six-Stringed Piece of Wood&lt;/h2&gt;
 
 &lt;p&gt;While I was playing drums in The Sixteens, I wanted to be able to play with the band my favourite songs from Joe Satriani or Steve Vai. However, our technique wasn’t good enough to approach this kind of songs and also, the guitarist didn’t resonate with that genre of music so I got motivated to try and see how hard could it be to play those songs on guitar. Until then I picked up the guitar only for a couple of times, I knew just how to play the bassline of Gary Moore – Midnight Blues and the intro to Deep Purple – Smoke on The Water.&lt;/p&gt;
 
@@ -361,7 +361,7 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;As I progressed quickly with the guitar, I became impatient with the slow development of our band and the changes in style (we began playing old rock and roll songs which for drums are a little boring) and even with those simple songs we weren’t able to hold a concert for nearly one year. This impatience brought me to quit the band and focus on studying the guitar alone. During highschool I didn’t have too much homework to do (or I didn’t do it anyway :)) so I had a lot of time to practice the guitar. I learned a couple of my favourite songs, I played over backing tracks learning to improvise, I even played live over Yahoo Messenger for a couple of friends that wanted to listen. Being serious about it, my parents got me my first guitar, an Ibanez JS1200 that I absolutely love.&lt;/p&gt;
 
-&lt;h1 id=&quot;switching-to-guitar&quot;&gt;Switching to Guitar&lt;/h1&gt;
+&lt;h2 id=&quot;switching-to-guitar&quot;&gt;Switching to Guitar&lt;/h2&gt;
 
 &lt;p&gt;After I got better and I felt that I could play, a new instrument made it’s way into our house, an Ibanez JS1200. I joined the IVO band as a solo guitarist and my father switched to rhythm guitar. We held our first concert in 2009 in the following formula:&lt;/p&gt;
 
@@ -376,7 +376,7 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;In 2013 I held my first solo concert at the Jazz-Rock festival in Campina. The playlist included 13 instrumental rock songs from Steve Vai and Joe Satriani.&lt;/p&gt;
 
-&lt;h1 id=&quot;meeting-steve-vai&quot;&gt;Meeting Steve Vai&lt;/h1&gt;
+&lt;h2 id=&quot;meeting-steve-vai&quot;&gt;Meeting Steve Vai&lt;/h2&gt;
 
 &lt;p&gt;Another great moment of my life that I dreamed of was meeting Steve Vai in person. First time I met him in a press conference before the concert that he held with the Romanian Evolution Tempo Orchestra in Bucharest. I took my guitar and I got an autograph and a nice photo with him. Unfortunately, the autograph was placed where my hand usually sits and it prevented me from playing relaxed, so I decided to wipe it off.&lt;/p&gt;
 
@@ -384,7 +384,7 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;When I got on the stage, I lost every musical idea that I thought of before when I heard that the backing track will be a loop from Building the Church. I was in a pure blank mental state so I had to improvise. There were some of the best musicians from Romania in the audience, but I managed to ignore them and play as if I was alone (admittedly with trembling hands). I managed to bring up some nice musical ideas and that made Steve tell me: “Do not give up!”. He didn’t say that to anybody else, so I felt very privileged. With that event, I also got a better placed autograph on my guitar that still reminds me of that moment.&lt;/p&gt;
 
-&lt;h1 id=&quot;sound-recording-and-engineering&quot;&gt;Sound Recording and Engineering&lt;/h1&gt;
+&lt;h2 id=&quot;sound-recording-and-engineering&quot;&gt;Sound Recording and Engineering&lt;/h2&gt;
 
 &lt;p&gt;I became interested in sound recording and engineering techniques around the time I picked up the guitar. I learned about recording gear in deep technical detail, and read a couple of books on sound, acoustics, recording equipment and techniques. Among the best books I read, I can recommend:&lt;/p&gt;
 
@@ -398,7 +398,7 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;To practice, I started recording my own drum set with a couple of mics in a small untreated room. I played around with the sound and fooled with EQs, compressors and various effects to understand them better and to develop my ear.&lt;/p&gt;
 
-&lt;h1 id=&quot;composition&quot;&gt;Composition&lt;/h1&gt;
+&lt;h2 id=&quot;composition&quot;&gt;Composition&lt;/h2&gt;
 
 &lt;p&gt;Discovering virtual instruments I realised how easy it is to hear your music as being played by a real orchestra or band so I started fooling around with a couple of musical ideas and sketches. Everytime I had a musical idea however, I couldn’t turn it into a song that I would identify myself with, so I ended up having a lot of short sketches.&lt;/p&gt;
 
@@ -408,7 +408,7 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;If you would like to listen to some of my musical sketches and ideas see the link at the bottom.&lt;/p&gt;
 
-&lt;h1 id=&quot;teaching-music&quot;&gt;Teaching Music&lt;/h1&gt;
+&lt;h2 id=&quot;teaching-music&quot;&gt;Teaching Music&lt;/h2&gt;
 
 &lt;p&gt;I had a nice experience as a research assistant in National University of Singapore. I was part of the Sound and Music Computing lab and professor Ye Wang offered me the great opportunity of holding a lecture in the Sound and Music Computing course where I presented an introduction to music theory. I received great feedback from the students so professor Wang asked me to do another small lecture on introduction to MIDI.&lt;/p&gt;
 
@@ -416,11 +416,11 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;If you want to watch the lectures, check the link at the bottom of this post and tell me what do you think about the style of teaching.&lt;/p&gt;
 
-&lt;h1 id=&quot;now&quot;&gt;Now…&lt;/h1&gt;
+&lt;h2 id=&quot;now&quot;&gt;Now…&lt;/h2&gt;
 
 &lt;p&gt;I am still part of IVO band. Desant is now a nice piece of history. Vladimir started producing electronic music, Gabriel is still engaged in a couple of acoustic and metal musical projects, Andrei moved to the United Kingdom and music is just a hobby for him and Alin is a member of Freestay band. The Sixteens band is now called Xteens and they are actively performing at private parties or in clubs.&lt;/p&gt;
 
-&lt;h1 id=&quot;the-end&quot;&gt;The End&lt;/h1&gt;
+&lt;h2 id=&quot;the-end&quot;&gt;The End&lt;/h2&gt;
 
 &lt;p&gt;I really appreciate you for taking your time to read one of the stories of my life. I hope you found it interesting and maybe motivational. Here are the links that I promised above:&lt;/p&gt;
 
@@ -438,23 +438,23 @@ would you like to meet and talk?”&lt;br /&gt;
     
       <item>
         <title>About</title>
-        <description>&lt;h1 id=&quot;who-am-i&quot;&gt;Who Am I?&lt;/h1&gt;
+        <description>&lt;h2 id=&quot;who-am-i&quot;&gt;Who Am I?&lt;/h2&gt;
 
 &lt;p&gt;I am Mihai Cosareanu and I am &lt;em&gt;mostly&lt;/em&gt; an artist.&lt;/p&gt;
 
-&lt;h1 id=&quot;a-heart-for-feelings&quot;&gt;A Heart for Feelings&lt;/h1&gt;
+&lt;h2 id=&quot;a-heart-for-feelings&quot;&gt;A Heart for Feelings&lt;/h2&gt;
 
 &lt;p&gt;I love conveying feelings and emotions to people and I do believe that one of the best ways to achieve that is through music. I think it’s a universal language of emotions that we are able to understand even before we are born. No matter how old you are, where you’re from or what language you speak, you are able to feel and enjoy the language of music.&lt;/p&gt;
 
 &lt;p&gt;Besides playing music, another thing that I spend a lot of time on and that feeds my soul is meeting people and having long emotionally-engaging talks. In fact, I think I have a genuine passion for people. I try to understand every person that I come across, even when our values disagree or when we have different points of view. I found out that this is great for improving your communication skills.&lt;/p&gt;
 
-&lt;h1 id=&quot;a-mind-for-thoughts&quot;&gt;A Mind for Thoughts&lt;/h1&gt;
+&lt;h2 id=&quot;a-mind-for-thoughts&quot;&gt;A Mind for Thoughts&lt;/h2&gt;
 
 &lt;p&gt;Since I was a child, I haven’t taken things for granted, I have always asked myself questions like “why is this so?” and “how does that work?”. These questions made me look deeper into a lot of subjects such as science, technology, economics, psychology, religion, and philosophy. I have a general curiosity and an endless thirst to understand everything that I come across.&lt;/p&gt;
 
 &lt;p&gt;For that matter, I spend a lot of time thinking. I think about our greatest problems, I think about happiness, the meaning of life, existence and death. I even think about what thinking is, and how it affects my body, my mind and my perceptions. It’s a crazy thought zoo in there :)&lt;/p&gt;
 
-&lt;h1 id=&quot;my-story&quot;&gt;My Story&lt;/h1&gt;
+&lt;h2 id=&quot;my-story&quot;&gt;My Story&lt;/h2&gt;
 
 &lt;p&gt;I began to be a part of this world on the 26th of January 1992 in Campina, Romania, a nice and peaceful place, situated around 100 Km from Bucharest.&lt;/p&gt;
 
@@ -470,11 +470,11 @@ would you like to meet and talk?”&lt;br /&gt;
 
 &lt;p&gt;After I got my degree, I got an opportunity to work as a research assistant at the National University of Singapore’s research lab for Sound and Music Computing. I stayed in Singapore for around 6 months and traveled around in Malaysia Cambodia, and Thailand, then returned back home.&lt;/p&gt;
 
-&lt;h1 id=&quot;what-am-i-doing-now&quot;&gt;What Am I Doing Now?&lt;/h1&gt;
+&lt;h2 id=&quot;what-am-i-doing-now&quot;&gt;What Am I Doing Now?&lt;/h2&gt;
 
 &lt;p&gt;Currently I am working as a cloud software engineer at Fitbit. In my free time I play guitar, compose musical pieces, practice sound engineering, take walks, meet people, travel around and feed my curiosity by reading books and taking courses on various subjects.&lt;/p&gt;
 
-&lt;h1 id=&quot;get-in-touch-with-me&quot;&gt;Get in Touch with Me&lt;/h1&gt;
+&lt;h2 id=&quot;get-in-touch-with-me&quot;&gt;Get in Touch with Me&lt;/h2&gt;
 
 &lt;p&gt;If you think I could be of value to you or if you just want to get to know me, make sure to drop a message. I am always keen on meeting new people, discovering new ideas, sharing my passion and sharpening my mind :)&lt;/p&gt;
 
