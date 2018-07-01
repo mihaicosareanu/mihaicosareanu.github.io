@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    // $('.flexslider').flexslider({
-    //     animation: "fade",
-    //     prevText: "",
-    //     nextText: "",
-    //     start: function (slider) {
-    //         slider.removeClass('loading');
-    //     }
-    // });
 
     var galleries = [];
     $(".gallery").each(function(i, obj) {
